@@ -1,0 +1,585 @@
+/* Ibarra Real Nova */
+@import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap');
+
+/* Mukta */
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+
+body {
+    /* font-family: 'Ibarra Real Nova', serif;
+    font-family: 'Mukta', sans-serif; */
+
+    position: relative;
+}
+
+/* Start Header Section  */
+    /* Start intro  */
+    .headerIntros {
+        font-family: 'Mukta', sans-serif;
+
+        width: 100%;
+        height: 60px;
+
+        background-color: white;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .headings {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .headings .humbagers{
+        display: none;
+    }
+
+    .lineones,.linetwos,.linethrees{
+        width: 35px;
+        height: 2px;
+
+        background-color: #111;
+
+        margin: 6px;
+    }
+
+    .headings h3 {
+        font-family: 'Ibarra Real Nova', serif;
+        letter-spacing: 2px;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .countrys,.logins {
+        cursor: pointer;
+        display: inline-block;
+    }
+
+    .rotate-arrows {
+        transform: rotate(180deg);
+    }
+
+    .login-forms {
+        width: 350px;
+
+        background-color: #f4f4f4;
+
+        position: absolute;
+        left: 70%;
+        top: 60px;
+
+        display: none;
+    }
+
+    .button-parts {
+        margin: 20px;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 250px;
+
+        display: block;
+
+        margin: 10px 0;
+    }
+
+    .btn-outline-primary:hover{
+        background-color: white;
+    }
+
+    .detail-parts{
+        height: 60vh;
+        background-color: #d1d7e0;
+
+        padding: 40px 30px;
+    }
+
+    .detail-parts h6 {
+        font-weight: bold;
+    }
+
+    .detail-parts ul li {
+        cursor: pointer;
+        
+        line-height: 2.5;
+    }
+
+    .detail-parts ul li:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    @media (max-width: 768px) {
+        .headings h3 {
+            display: inline-block;
+            transform: translate(0px, -10px);
+        }
+
+        .countrys,.logins span {
+            display: none;
+        }
+
+        .headings .humbagers {
+            display: inline-block;
+
+            background-color: transparent;
+
+            border: none;
+        }  
+    }
+
+    /* End intro  */
+
+    /* Start Hotel Address   */
+    .hotelInfos {
+        width: 100%;
+        height: auto;
+
+        font-family: 'Ibarra Real Nova', serif;
+
+        background-color: #000;
+    }
+
+    .sydneys {
+        display: none;
+    }
+
+    .hotelAddress li a {
+        text-decoration: none;
+    }
+
+    .hotelAddress li a:hover {
+        text-decoration: underline;
+    }
+
+    .left-annimations {
+        animation-name: moveleft;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes moveleft {
+        from {
+            transform: translateX(0px);
+        }
+        to {
+            transform: translateX(-200px);
+        }
+    }
+
+    .bookingBtns {
+        background-color: yellow;
+
+        font-size: 20px;
+
+        padding: 5px 30px;
+    }
+
+    @media (max-width: 768px) {
+        .park-hyatts {
+            width: 200px;
+            height: 150px;
+
+            margin: auto;
+
+            display: none;
+        }
+
+        .sydneys {
+            display: block;
+
+            text-align: center;
+
+            margin-bottom: 30px;
+        }
+
+        .hotelAddress .full-sydneys,.contacts{
+            display: none;
+        }
+
+        .hotelAddress {
+            display: flex;
+            justify-content: center;
+        }
+
+        .hotelAddress li {
+            margin: 0 20px;
+        }
+
+        .hotelAddress li i {
+            font-size: 20px;
+        }
+
+        .bookingBtns {
+            width: 100%;
+            background-color: yellow;
+    
+            padding: 5px 30px;
+        }
+
+        .navbarlinks .nav-link:hover {
+            text-decoration: underline;
+        }
+
+    }
+    /* End Hotel Address   */
+
+    /* Start Nav Bar  */
+    .navbars {
+        display: inline-block;
+    }
+
+    .navbars ul {
+        display: flex;
+    }
+
+    .navbars .navbarlinks .nav-link:hover {
+        text-decoration: underline;
+    }
+
+    .navbar-slides {
+        display: none;
+    }
+
+    @media (max-width: 768px) {
+        .navbars {
+            display: none;
+        }
+
+        .navbar-slides {
+            width: 300px;
+            height: 100vh;
+
+            background-color: #f4f4f4;
+
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .navbar-slides .crosss {
+            display: inline-block;
+
+            background-color: transparent;
+
+            border: none;
+
+            margin-left: 5px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .crossones,.crosstwos {
+            width: 35px;
+            height: 2px;
+
+            background-color: #111;
+
+            margin: 6px;
+        }
+
+        .crossones {
+            width: 30px;
+            transform: rotate(45deg) translate(6px, 6px);
+        }
+
+        .crosstwos {
+            width: 30px;
+            transform: rotate(-45deg);
+        }
+
+        .navbar-slides h5{
+            font-family: 'Ibarra Real Nova', serif;
+            font-size: 18px;
+
+            display: inline-block;
+        }
+
+        .navbar-slides .navbarlinks .nav-link {
+            color: #000 !important;
+
+            border-bottom: 1px solid silver;
+        }
+
+        .navbar-slides .navbarlinks .nav-link:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+    }
+    /* End Nav Bar  */
+
+    /* Start Banner  */
+    .banner-buttons button {
+        padding: 10px 20px;
+        margin: 20px 100px 40px 0;
+
+        border-color: darkred;
+
+        background-color: transparent;
+
+        color: grey;
+
+        float: right;
+    }
+
+    .banner-buttons button:hover {
+        background-color: darkred;
+
+        color: #fff;
+    }
+
+    .banner-paragraphs {
+        margin-bottom: 30px;
+
+        clear: both;
+
+        position: relative;
+    }
+
+    .banner-paragraphs p {
+        font-family: 'Mukta', sans-serif;
+
+        width: 80%;
+
+        font-size: 19px;
+
+        text-align: center;
+
+        border: 1px solid blue;
+
+        padding: 10px 20px;
+        
+        display: inline-block;
+
+        transform: translateX(-50%);
+
+        position: absolute;
+        left: 50%;
+        top: 0;
+    }
+
+    @media (max-width: 768px) {
+        .banners {
+            margin-top: 200px;
+        }
+    }
+    /* End Banner  */
+/* End Header Section  */
+
+/* Start Our Service Section  */
+.services h2,.care-texts h2{
+    font-family: 'Ibarra Real Nova', serif;
+}
+
+.services span {
+    display: inline-block;
+
+    width: 100px;
+    height: auto;
+
+    border-bottom: 3px solid #000;
+}
+
+.services p {
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+/* End Our Service Section  */
+
+/* Start Commitent Care Section  */
+.care-sections {
+    background-color: #f4f4f4;
+}
+
+.care-texts,.global-logos {
+    margin: 50px 0;
+}
+
+.care-texts p {
+    font-size: 18px;
+    font-weight: 100;
+}
+
+.care-texts a {
+    padding: 0;
+    margin: 0;
+
+    font-weight: 100;
+}
+
+.care-texts a:hover {
+    text-decoration: underline;
+}
+/* End Commitent Care Section  */
+
+/* Start Amenities Section  */
+.amenities-headings {
+    font-family: 'Ibarra Real Nova', serif;
+}
+
+.amenitiess span {
+    display: block;
+
+    margin: 10px 0 0 0;
+}
+
+.amenities-btns button {
+   padding: 10px 20px;
+
+   border: 1px solid darkred;
+
+   background-color: transparent;
+
+   margin: 30px;
+
+   color: grey;
+}
+
+.amenities-btns button:hover {
+    background-color: darkred;
+
+    color: #fff;
+}
+/* End Amenities Section  */
+
+/* Start Safety First Section  */
+.safetys {
+    background-size: cover;
+    background-image: url("./../asset/imgs/bodyimg/park-Hyatt-Sanya-Sunny-Bay-Resort.jpg");
+
+    display: flex;
+    justify-content: end;
+}
+
+.safety-texts {
+    width: 50%;
+
+    padding: 50px 20px;
+
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.5)
+    );
+}
+
+.safety-texts span {
+    width: 50%;
+    display: inline-block;
+
+    border-bottom: 3px solid #fff;
+
+    margin: 20px 0;
+}
+
+.safety-texts p,.safety-texts a {
+    font-size: 18px;
+}
+
+.safety-texts .nav-link:hover {
+    text-decoration: underline;
+}
+/* End Safety First Section  */
+
+/* Start Room & Suites Section  */
+.roomsuites-headings {
+    font-family: 'Ibarra Real Nova', serif;
+}
+
+.card {
+    border: none;
+}
+
+.card-body img {
+    width: 100%;
+}
+
+.roomsuites-btns button {
+    padding: 10px 20px;
+
+    border-color: darkred;
+
+    background-color: transparent;
+
+    color: grey;
+}
+
+.roomsuites-btns button:hover {
+    color: #fff;
+
+    background-color: darkred;
+}
+
+.dinning-rooms img,.spas img {
+    width: 100%;
+    height: 400px;
+}
+
+.dinning-rooms,.spas {
+    position: relative;
+}
+
+.dinning-rooms::before,.spas::before {
+    content: "";
+
+    width: 50%;
+    height: 40%;
+
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.8),
+        rgba(0, 0, 0, 0.5)
+    );
+
+    transform: translateX(-50%);
+
+    position: absolute;
+    left: 50%;
+    top: 0;
+
+   transition: all 0.5s;
+}
+
+.dinning-rooms:hover::before,.spas:hover::before{
+    width: 100%;
+    height: 100%;
+}
+
+.dinning-texts,.spa-texts {
+    transform: translateX(-50%);
+
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+
+.dinning-texts h6,.spa-texts h6 {
+    display: inline-block;
+    border-bottom: 3px solid #fff;
+
+    margin: 30px;
+}
+
+.about-menus p,.about-spas p {
+    width: 90%;
+
+    margin-left: 30px;
+
+    transform: translateY(-50%);
+
+    position: absolute;
+    left: 0;
+    top: 50%;
+
+    display: none;
+
+    transition: display 0.5s;
+}
+
+.dinning-rooms:hover p,.spas:hover p {
+    display: block;
+}
+/* End Room & Suites Section  */
