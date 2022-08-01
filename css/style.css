@@ -1,373 +1,370 @@
 /* Ibarra Real Nova */
 @import url('https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova&display=swap');
 
-/* Mukta */
-@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
-
+* {
+    padding: 0;
+    margin: 0;
+}
 
 body {
     /* font-family: 'Ibarra Real Nova', serif;
     font-family: 'Mukta', sans-serif; */
-
+    
     position: relative;
 }
 
 /* Start Header Section  */
-    /* Start intro  */
-    .headerIntros {
-        font-family: 'Mukta', sans-serif;
+/* Start intro  */
+.headerIntros {
+    font-family: 'Mukta', sans-serif;
+    
+    width: 100%;
+    height: 60px;
+    
+    background-color: white;
+    
+    display: flex;
+    align-items: center;
+}
 
-        width: 100%;
-        height: 60px;
+.headings {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-        background-color: white;
+.headings .humbagers{
+    display: none;
+}
 
-        display: flex;
-        align-items: center;
-    }
+.lineones,.linetwos,.linethrees{
+    width: 35px;
+    height: 2px;
+    
+    background-color: #111;
+    
+    margin: 6px;
+}
 
-    .headings {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+.headings h3 {
+    font-family: 'Ibarra Real Nova', serif;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
 
-    .headings .humbagers{
-        display: none;
-    }
+.countrys,.logins {
+    cursor: pointer;
+    display: inline-block;
+}
 
-    .lineones,.linetwos,.linethrees{
-        width: 35px;
-        height: 2px;
+.rotate-arrows {
+    transform: rotate(180deg);
+}
 
-        background-color: #111;
+.login-forms {
+    width: 350px;
+    
+    background-color: #f4f4f4;
+    
+    position: absolute;
+    left: 70%;
+    top: 60px;
+    
+    display: none;
+}
 
-        margin: 6px;
-    }
+.button-parts {
+    margin: 20px;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
+.btn {
+    width: 250px;
+    
+    display: block;
+    
+    margin: 10px 0;
+}
+
+.btn-outline-primary:hover{
+    background-color: white;
+}
+
+.detail-parts{
+    height: 60vh;
+    background-color: #d1d7e0;
+    
+    padding: 40px 30px;
+}
+
+.detail-parts h6 {
+    font-weight: bold;
+}
+
+.detail-parts ul li {
+    cursor: pointer;
+    
+    line-height: 2.5;
+}
+
+.detail-parts ul li:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
     .headings h3 {
-        font-family: 'Ibarra Real Nova', serif;
-        letter-spacing: 2px;
-        font-size: 20px;
-        font-weight: bold;
-    }
-
-    .countrys,.logins {
-        cursor: pointer;
         display: inline-block;
+        transform: translate(0px, -10px);
     }
-
-    .rotate-arrows {
-        transform: rotate(180deg);
-    }
-
-    .login-forms {
-        width: 350px;
-
-        background-color: #f4f4f4;
-
-        position: absolute;
-        left: 70%;
-        top: 60px;
-
+    
+    .countrys,.logins span {
         display: none;
     }
-
-    .button-parts {
-        margin: 20px;
-
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    .btn {
-        width: 250px;
-
-        display: block;
-
-        margin: 10px 0;
-    }
-
-    .btn-outline-primary:hover{
-        background-color: white;
-    }
-
-    .detail-parts{
-        height: 60vh;
-        background-color: #d1d7e0;
-
-        padding: 40px 30px;
-    }
-
-    .detail-parts h6 {
-        font-weight: bold;
-    }
-
-    .detail-parts ul li {
-        cursor: pointer;
+    
+    .headings .humbagers {
+        display: inline-block;
         
-        line-height: 2.5;
+        background-color: transparent;
+        
+        border: none;
+    }  
+}
+
+/* End intro  */
+
+/* Start Hotel Address   */
+.hotelInfos {
+    width: 100%;
+    height: auto;
+    
+    font-family: 'Ibarra Real Nova', serif;
+    
+    background-color: #000;
+}
+
+.sydneys {
+    display: none;
+}
+
+.hotelAddress li a {
+    text-decoration: none;
+}
+
+.hotelAddress li a:hover {
+    text-decoration: underline;
+}
+
+.bookingBtns {
+    background-color: yellow;
+    
+    padding: 5px 30px;
+}
+
+/* Start Hotel Address Animation  */
+.parkhyatt-animations {
+    animation-name: moveleft;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes moveleft {
+    from {
+        transform: translateX(0px);
     }
-
-    .detail-parts ul li:hover {
-        background-color: rgba(0, 0, 0, 0.1);
+    to {
+        transform: translateX(-200px);
     }
+}
+/* End Hotel Address Animation  */
 
-    @media (max-width: 768px) {
-        .headings h3 {
-            display: inline-block;
-            transform: translate(0px, -10px);
-        }
-
-        .countrys,.logins span {
-            display: none;
-        }
-
-        .headings .humbagers {
-            display: inline-block;
-
-            background-color: transparent;
-
-            border: none;
-        }  
-    }
-
-    /* End intro  */
-
-    /* Start Hotel Address   */
-    .hotelInfos {
-        width: 100%;
-        height: auto;
-
-        font-family: 'Ibarra Real Nova', serif;
-
-        background-color: #000;
-    }
-
-    .sydneys {
+@media (max-width: 768px) {
+    .park-hyatts {
+        width: 200px;
+        height: 150px;
+        
+        margin: auto;
+        
         display: none;
     }
-
-    .hotelAddress li a {
-        text-decoration: none;
+    
+    .sydneys {
+        display: block;
+        
+        text-align: center;
+        
+        margin-bottom: 30px;
     }
-
-    .hotelAddress li a:hover {
-        text-decoration: underline;
+    
+    .hotelAddress .full-sydneys,.contacts{
+        display: none;
     }
-
-    .left-annimations {
-        animation-name: moveleft;
-        animation-duration: 3s;
-        animation-fill-mode: forwards;
+    
+    .hotelAddress {
+        display: flex;
+        justify-content: center;
     }
-
-    @keyframes moveleft {
-        from {
-            transform: translateX(0px);
-        }
-        to {
-            transform: translateX(-200px);
-        }
+    
+    .hotelAddress li {
+        margin: 0 20px;
     }
-
-    .bookingBtns {
-        background-color: yellow;
-
+    
+    .hotelAddress li i {
         font-size: 20px;
-
+    }
+    
+    .bookingBtns {
+        width: 100%;
+        background-color: yellow;
+        
         padding: 5px 30px;
     }
-
-    @media (max-width: 768px) {
-        .park-hyatts {
-            width: 200px;
-            height: 150px;
-
-            margin: auto;
-
-            display: none;
-        }
-
-        .sydneys {
-            display: block;
-
-            text-align: center;
-
-            margin-bottom: 30px;
-        }
-
-        .hotelAddress .full-sydneys,.contacts{
-            display: none;
-        }
-
-        .hotelAddress {
-            display: flex;
-            justify-content: center;
-        }
-
-        .hotelAddress li {
-            margin: 0 20px;
-        }
-
-        .hotelAddress li i {
-            font-size: 20px;
-        }
-
-        .bookingBtns {
-            width: 100%;
-            background-color: yellow;
     
-            padding: 5px 30px;
-        }
-
-        .navbarlinks .nav-link:hover {
-            text-decoration: underline;
-        }
-
-    }
-    /* End Hotel Address   */
-
-    /* Start Nav Bar  */
-    .navbars {
-        display: inline-block;
-    }
-
-    .navbars ul {
-        display: flex;
-    }
-
-    .navbars .navbarlinks .nav-link:hover {
+    .navbarlinks .nav-link:hover {
         text-decoration: underline;
     }
+    
+}
+/* End Hotel Address   */
 
-    .navbar-slides {
+/* Start Nav Bar  */
+.navbars {
+    display: inline-block;
+}
+
+.navbars ul {
+    display: flex;
+}
+
+.navbars .navbarlinks .nav-link:hover {
+    text-decoration: underline;
+}
+
+.navbar-slides {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .navbars {
         display: none;
     }
-
-    @media (max-width: 768px) {
-        .navbars {
-            display: none;
-        }
-
-        .navbar-slides {
-            width: 300px;
-            height: 100vh;
-
-            background-color: #f4f4f4;
-
-            position: absolute;
-            left: 0;
-            top: 0;
-        }
-
-        .navbar-slides .crosss {
-            display: inline-block;
-
-            background-color: transparent;
-
-            border: none;
-
-            margin-left: 5px;
-            margin-top: 10px;
-            margin-bottom: 10px;
-        }
-
-        .crossones,.crosstwos {
-            width: 35px;
-            height: 2px;
-
-            background-color: #111;
-
-            margin: 6px;
-        }
-
-        .crossones {
-            width: 30px;
-            transform: rotate(45deg) translate(6px, 6px);
-        }
-
-        .crosstwos {
-            width: 30px;
-            transform: rotate(-45deg);
-        }
-
-        .navbar-slides h5{
-            font-family: 'Ibarra Real Nova', serif;
-            font-size: 18px;
-
-            display: inline-block;
-        }
-
-        .navbar-slides .navbarlinks .nav-link {
-            color: #000 !important;
-
-            border-bottom: 1px solid silver;
-        }
-
-        .navbar-slides .navbarlinks .nav-link:hover {
-            background-color: rgba(0, 0, 0, 0.1);
-        }
-    }
-    /* End Nav Bar  */
-
-    /* Start Banner  */
-    .banner-buttons button {
-        padding: 10px 20px;
-        margin: 20px 100px 40px 0;
-
-        border-color: darkred;
-
-        background-color: transparent;
-
-        color: grey;
-
-        float: right;
-    }
-
-    .banner-buttons button:hover {
-        background-color: darkred;
-
-        color: #fff;
-    }
-
-    .banner-paragraphs {
-        margin-bottom: 30px;
-
-        clear: both;
-
-        position: relative;
-    }
-
-    .banner-paragraphs p {
-        font-family: 'Mukta', sans-serif;
-
-        width: 80%;
-
-        font-size: 19px;
-
-        text-align: center;
-
-        border: 1px solid blue;
-
-        padding: 10px 20px;
+    
+    .navbar-slides {
+        width: 300px;
+        height: 100vh;
         
-        display: inline-block;
-
-        transform: translateX(-50%);
-
+        background-color: #f4f4f4;
+        
         position: absolute;
-        left: 50%;
+        left: 0;
         top: 0;
     }
-
-    @media (max-width: 768px) {
-        .banners {
-            margin-top: 200px;
-        }
+    
+    .navbar-slides .crosss {
+        display: inline-block;
+        
+        background-color: transparent;
+        
+        border: none;
+        
+        margin-left: 5px;
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
-    /* End Banner  */
+    
+    .crossones,.crosstwos {
+        width: 35px;
+        height: 2px;
+        
+        background-color: #111;
+        
+        margin: 6px;
+    }
+    
+    .crossones {
+        width: 30px;
+        transform: rotate(45deg) translate(6px, 6px);
+    }
+    
+    .crosstwos {
+        width: 30px;
+        transform: rotate(-45deg);
+    }
+    
+    .navbar-slides h5{
+        font-family: 'Ibarra Real Nova', serif;
+        
+        display: inline-block;
+    }
+    
+    .navbar-slides .navbarlinks .nav-link {
+        color: #000 !important;
+        
+        border-bottom: 1px solid silver;
+    }
+    
+    .navbar-slides .navbarlinks .nav-link:hover {
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+}
+/* End Nav Bar  */
+
+/* Start Banner  */
+.banner-buttons button {
+    padding: 10px 20px;
+    margin: 20px 100px 40px 0;
+    
+    border-color: darkred;
+    
+    background-color: transparent;
+    
+    color: grey;
+    
+    float: right;
+}
+
+.banner-buttons button:hover {
+    background-color: darkred;
+    
+    color: #fff;
+}
+
+.banner-paragraphs {
+    margin-bottom: 30px;
+    
+    clear: both;
+    
+    position: relative;
+}
+
+.banner-paragraphs p {
+    font-family: 'Mukta', sans-serif;
+    
+    width: 80%;
+    
+    text-align: center;
+    
+    border: 1px solid blue;
+    
+    padding: 10px 20px;
+    
+    display: inline-block;
+    
+    transform: translateX(-50%);
+    
+    position: absolute;
+    left: 50%;
+    top: 0;
+}
+
+@media (max-width: 768px) {
+    .banners {
+        margin-top: 200px;
+    }
+}
+/* End Banner  */
 /* End Header Section  */
 
 /* Start Our Service Section  */
@@ -377,15 +374,14 @@ body {
 
 .services span {
     display: inline-block;
-
+    
     width: 100px;
     height: auto;
-
+    
     border-bottom: 3px solid #000;
 }
 
 .services p {
-    font-size: 20px;
     font-weight: 100;
     letter-spacing: 1px;
 }
@@ -401,20 +397,54 @@ body {
 }
 
 .care-texts p {
-    font-size: 18px;
     font-weight: 100;
 }
 
 .care-texts a {
     padding: 0;
     margin: 0;
-
+    
     font-weight: 100;
 }
 
 .care-texts a:hover {
     text-decoration: underline;
 }
+/* Start Commitent Care Section Animation  */
+.left {
+    animation-name: left-animations;
+    animation-duration: 2000ms;
+    animation-fill-mode: forwards;
+}
+
+.right {
+    animation-name: right-animations;
+    animation-duration: 2000ms;
+    animation-fill-mode: forwards;
+}
+
+@keyframes left-animations {
+    from {
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes right-animations {
+    from {
+        transform: translateX(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+/* End Commitent Care Section Animation  */
 /* End Commitent Care Section  */
 
 /* Start Amenities Section  */
@@ -424,60 +454,72 @@ body {
 
 .amenitiess span {
     display: block;
-
+    
     margin: 10px 0 0 0;
 }
 
 .amenities-btns button {
-   padding: 10px 20px;
-
-   border: 1px solid darkred;
-
-   background-color: transparent;
-
-   margin: 30px;
-
-   color: grey;
+    padding: 10px 20px;
+    
+    border: 1px solid darkred;
+    
+    background-color: transparent;
+    
+    margin: 30px;
+    
+    color: grey;
 }
 
 .amenities-btns button:hover {
     background-color: darkred;
-
+    
     color: #fff;
 }
+/* Start Amenities Section Animation  */
+.amenities-animations {
+    animation-name: amenities-animation;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes amenities-animation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+/* End Amenities Section Animation  */
 /* End Amenities Section  */
 
 /* Start Safety First Section  */
 .safetys {
     background-size: cover;
     background-image: url("./../asset/imgs/bodyimg/park-Hyatt-Sanya-Sunny-Bay-Resort.jpg");
-
+    
     display: flex;
     justify-content: end;
 }
 
 .safety-texts {
     width: 50%;
-
+    
     padding: 50px 20px;
-
+    
     background: linear-gradient(
-        rgba(0, 0, 0, 0.8),
-        rgba(0, 0, 0, 0.5)
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.5)
     );
 }
 
 .safety-texts span {
     width: 50%;
     display: inline-block;
-
+    
     border-bottom: 3px solid #fff;
-
+    
     margin: 20px 0;
-}
-
-.safety-texts p,.safety-texts a {
-    font-size: 18px;
 }
 
 .safety-texts .nav-link:hover {
@@ -500,17 +542,17 @@ body {
 
 .roomsuites-btns button {
     padding: 10px 20px;
-
+    
     border-color: darkred;
-
+    
     background-color: transparent;
-
+    
     color: grey;
 }
 
 .roomsuites-btns button:hover {
     color: #fff;
-
+    
     background-color: darkred;
 }
 
@@ -525,22 +567,22 @@ body {
 
 .dinning-rooms::before,.spas::before {
     content: "";
-
+    
     width: 50%;
     height: 40%;
-
+    
     background: linear-gradient(
-        rgba(0, 0, 0, 0.8),
-        rgba(0, 0, 0, 0.5)
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.5)
     );
-
+    
     transform: translateX(-50%);
-
+    
     position: absolute;
     left: 50%;
     top: 0;
-
-   transition: all 0.5s;
+    
+    transition: all 0.5s;
 }
 
 .dinning-rooms:hover::before,.spas:hover::before{
@@ -550,7 +592,7 @@ body {
 
 .dinning-texts,.spa-texts {
     transform: translateX(-50%);
-
+    
     position: absolute;
     left: 50%;
     top: 0;
@@ -559,23 +601,23 @@ body {
 .dinning-texts h6,.spa-texts h6 {
     display: inline-block;
     border-bottom: 3px solid #fff;
-
+    
     margin: 30px;
 }
 
 .about-menus p,.about-spas p {
     width: 90%;
-
+    
     margin-left: 30px;
-
+    
     transform: translateY(-50%);
-
+    
     position: absolute;
     left: 0;
     top: 50%;
-
+    
     display: none;
-
+    
     transition: display 0.5s;
 }
 
@@ -583,3 +625,334 @@ body {
     display: block;
 }
 /* End Room & Suites Section  */
+
+/* Start Map,Parking+Transportation Section */
+.map-sections{
+    background-color: #f4f4f4;
+}
+
+.info-parts h3 {
+    font-family: 'Ibarra Real Nova', serif;
+}
+
+.addresss small,.phone-emails small {
+    font-weight: bold;
+    
+    display: inline-block;
+}
+
+.addresss a address {
+    width: 60%;
+}
+
+.addresss a,.phone-emails a {
+    display: block;
+    
+    color: #000;
+    
+    text-decoration: none;
+}
+
+.addresss a:hover,.phone-emails a:hover {
+    text-decoration: underline;
+}
+
+.phone-emails button {
+    background-color: transparent;
+    
+    border-color: darkred;
+    
+    padding: 5px 20px;
+    
+    font-size: 14px;
+    color: grey;
+}
+
+.phone-emails button:hover {
+    background-color: darkred;
+    
+    color: #fff;
+}
+/* End Map,Parking+Transportation Section */
+
+/* Start Room & Suites Section  */
+.roomsuites-parts h1 {
+    font-family: 'Ibarra Real Nova', serif;
+}
+
+.roomsuites-parts img {
+    width: 100%;
+    height: 700px;
+
+    clip-path: polygon(0 20%, 100% 20%, 100% 85%, 0 85%);
+
+    margin-top: -100px;
+}
+
+.opera-suits img {
+    width: 100%;
+}
+
+.room-contrusts {
+    margin: 30px;
+}
+
+.room-contrusts p {
+    width: 80%;
+}
+
+.opera-suittwos img {
+    width: 100%;
+
+    clip-path: polygon(20% 0, 80% 0, 80% 100%, 20% 100%);
+}
+
+.bath-rooms {
+    position: relative;
+}
+
+.bath-rooms img {
+    width: 100%;
+
+    position: absolute;
+    left: -90px;
+    top: -100px;
+}
+/* End Room & Suites Section  */
+
+/* Start Our Hotel Section  */
+.hotel-parts {
+    font-family: 'Ibarra Real Nova', serif;
+}
+
+.swimming-pools img,.fitnesss img {
+    width: 100%;
+
+    clip-path: polygon(0 0, 100% 0, 100% 28%, 80% 28%, 80% 100%, 0% 100%);
+}
+
+.guest-houses img,.gellarys img {
+    width: 100%;
+
+    clip-path: polygon(100% 0, 100% 100%, 20% 100%, 20% 28%, 0 28%, 0 0);
+}
+
+.swimmingpool-texts h3,.guesthouse-texts h3,.fitness-texts h3,.gellary-texts h3 {
+    letter-spacing: 1px;
+}
+
+.parent-swimmingpools,.parent-guesthouses,.parent-fitnesss,.parent-gellarys {
+    position: relative;
+}
+
+.swimmingpool-texts,.fitness-texts {
+    width: 150%;
+    height: 60%;
+
+    background-color: #fff;
+
+    border-left: 3px solid darkred;
+    border-top: 3px solid darkred;
+
+    position: absolute;
+    left: -50%;
+    top: 30%;
+}
+
+.guesthouse-texts,.gellary-texts {
+    width: 150%;
+    height: 60%;
+
+    background-color: #fff;
+
+    border-top: 3px solid darkred;
+    border-right: 3px solid darkred;
+
+    position: absolute;
+    left: 0%;
+    top: 30%;
+}
+
+.swimmingpool-texts,.fitness-texts {
+    padding: 30px 0 0 30px;
+}
+
+.guesthouse-texts,.gellary-texts {
+    padding: 30px 30px 0 0;
+}
+/* End Our Hotel Section  */
+
+/* Start Photo & Review Section  */
+.photo-headings h1 {
+    font-family: 'Ibarra Real Nova', serif;
+}
+
+.photo-parts {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photo-parts img {
+    width: 240px;
+}
+
+.review-parts h3 {
+    font-family: 'Ibarra Real Nova', serif;
+}
+
+.review-parts span {
+    display: inline-block;
+}
+
+.review-texts p {
+    width: 80%;
+}
+
+.review-texts button {
+    padding: 10px 20px;
+    
+    color: grey;
+
+    background-color: transparent;
+
+    border-color: darkred;
+}
+
+.review-texts button:hover {
+    color: #fff;
+
+    background-color: darkred;
+}
+/* End Photo & Review Section  */
+
+/* Start Dining Section  */
+.dining-headings h1 {
+    font-family: 'Ibarra Real Nova', serif;
+}
+
+.dining-images img {
+    width: 100%;
+}
+
+.dining-btn {
+    background-color: transparent;
+    
+    padding: 10px 20px;
+
+    border-color: darkred;
+
+    color: grey;
+}
+
+.dining-btn:hover {
+    color: #fff;
+
+    background-color: darkred;
+}
+
+.dining-texts {
+    position: relative;
+}
+
+.dining-texts img {
+    position: absolute;
+    right: -110px;
+    bottom: calc(-140%);
+
+    z-index: -1;
+}
+/* End Dining Section  */
+
+/* Start Events Section  */
+.events {
+    height: 30vh;
+    background-color: #000;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 0 -5px 0 #cfa84c;
+}
+
+.event-btns {
+    background-color: transparent;
+
+    border-color: #fff;
+
+    width: 200px;
+    height: 50px;
+}
+
+.event-btns:hover {
+    background-color: #fff;
+
+    color: #000 !important;
+}
+
+.event-socials small {
+    display: block;
+}
+
+.fa-facebook,.fa-instagram,.fa-twitter {
+    font-size: 25px;
+}
+
+.fa-facebook:hover {
+    color: steelblue;
+}
+
+.fa-instagram:hover {
+    color: pink;
+}
+
+.fa-twitter:hover {
+    color: skyblue;
+}
+/* End Events Section  */
+
+/* Start News Section  */
+.new-parts {
+    background-color: #f4f4f4;
+}
+
+.new-texts h3 {
+    font-family: 'Ibarra Real Nova', serif;
+}
+
+.new-texts p a {
+    text-decoration: none;
+}
+
+.new-texts p a:hover {
+    text-decoration: underline;
+}
+
+.new-texts span {
+    width: 100%;
+
+    display: inline-block;
+
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.first-links {
+    display: block;
+}
+
+.address-news a  {
+    text-decoration: none;
+}
+
+.address-news a:hover {
+    text-decoration: underline;
+}
+/* End News Section  */
+
+/* Start Footer Section  */
+.footer-parts {
+    background-color: #111;
+
+    box-shadow: 0 -5px 0 grey;
+}
+/* End Footer Section  */
