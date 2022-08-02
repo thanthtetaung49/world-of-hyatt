@@ -2,10 +2,16 @@ $(document).ready(function () {
     
     // Start Header Section  
     // Start intro
+    $(".languages").click(function (e) { 
+
+        $(".global-arrows").toggleClass("rotate-arrows");
+        e.preventDefault();
+    });
+
     $(".logins").click(function (e) {
         
-        $(".login-downs").toggleClass("rotate-arrows");
-        $(".login-forms").slideToggle(500);
+        $(".login-arrows").toggleClass("rotate-arrows");
+        $(".login-forms").toggle();
         e.preventDefault();            
     });
     
@@ -27,7 +33,7 @@ $(document).ready(function () {
             $(".park-imgs").hide("slide", 800); // hide logo
             $(".full-sydneys").addClass("parkhyatt-animations"); // move to left side header
             $(".informations").hide("slide", 800); // hide hotel address
-            $(".navbarlink-hides").hide("slide", {
+            $(".navbarhides").hide("slide", {
                 direction: "up"
             }, 800); // hide nav link
             
@@ -35,7 +41,7 @@ $(document).ready(function () {
             $(".park-imgs").show("slide", 1000); // show logo
             $(".full-sydneys").removeClass("parkhyatt-animations"); // move back to origin space header
             $(".informations").show("slide", 1000); // show hotel address
-            $(".navbarlink-hides").show("slide", {
+            $(".navbarhides").show("slide", {
                 direction:"up"
             }, 1000); // show nav link
         }
@@ -77,6 +83,15 @@ $(document).ready(function () {
             $(".amenitiess").removeClass("amenities-animations");
         }
     });
+
+    $(".detail-amenities").hide();
+
+    $(".amenities-btns button").click(function (e) { 
+
+        $(".amenitie-arrows").toggleClass("rotate-arrows");
+        $(".detail-amenities").toggle();
+        e.preventDefault();   
+    });
     // End Amenities Section
     
     // Start Safety First Section 
@@ -103,4 +118,12 @@ $(document).ready(function () {
         }
     });
     // End Map,Parking+Transportation Section
+
+    // Start Copyright Section 
+    let today = new Date();
+    
+    let getyear = today.getUTCFullYear();
+    
+    $("#year").text(getyear);
+    // End Copyright Section
 });

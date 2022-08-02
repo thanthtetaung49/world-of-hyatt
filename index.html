@@ -29,31 +29,42 @@
                 <div class="col-sm-11 mx-auto">
                     <div class="headings">
                         
-                        <div>
+                        <div class="brand-parts">
                             <button type="button" class="humbagers">
                                 <div class="lineones"></div>
                                 <div class="linetwos"></div>
                                 <div class="linethrees"></div>
                             </button>
                             
-                            <h3 class="text-primary text-uppercase">world of hyatt</h3>
+                            <h6 class="text-primary text-uppercase">world of hyatt</h6>
                         </div>
                         
-                        <div class="dropdowns">
-                            <div class="countrys">
-                                <i class="fa-solid fa-globe me-1"></i>
-                                <i class="fa-solid fa-angle-down me-4"></i>
+                        <div class="language-logins">
+                            <div class="dropdown">
+                                <a href="#" class="text-dark languages" data-bs-toggle="dropdown">
+                                    <i class="fa-solid fa-globe me-1"></i>
+                                    <i class="fa-solid fa-angle-down me-4 global-arrows"></i>
+                                </a>
+
+                                <ul class="dropdown-menu">
+                                    <li><a href="#" class="dropdown-item">English</a></li>
+                                    <li><a href="#" class="dropdown-item">Deuasth</a></li>
+                                    <li><a href="#" class="dropdown-item">Espanol</a></li>
+                                    <li><a href="#" class="dropdown-item">France</a></li>
+                                    <li><a href="#" class="dropdown-item">Portugues</a></li>
+                                    <li><a href="#" class="dropdown-item">China</a></li>
+                                </ul>
                             </div>
-                            
+
                             <div class="logins">
                                 <span class="me-1">Sign in or join</span>
                                 <i class="fa-solid fa-user me-1"></i>
-                                <i class="fa-solid fa-angle-down login-downs"></i>
+                                <i class="fa-solid fa-angle-down login-arrows"></i>
                             </div>
                             
                             <div class="login-forms">
                                 <div class="button-parts">
-                                    <h5>Welcome to World of Hyatt</h5>
+                                    <h6>Welcome to World of Hyatt</h5>
                                     
                                     <div class="loginsignup-parts">
                                         <button type="button" class="btn btn-primary btn-lg text-light rounded-0">Sign In</button>
@@ -75,8 +86,12 @@
                                         <li>Part Stays</li>
                                         <li>Retrieve Hotel Bills</li>
                                     </ul>
+
+                                    <h6 class="text-uppercase">world of hyatt</h6>
+                                    <ul class="list-unstyled">
+                                        <li>Program Overview</li>
+                                    </ul>
                                 </div>
-                                
                             </div>
                         </div>
                     </div>
@@ -95,7 +110,7 @@
                             <h3 class="text-light mt-3 sydneys">Sydney</h3>
                             <ul class="text-light list-unstyled hotelAddress">
                                 <li>
-                                    <h4 class="full-sydneys">Park Hyatt Sydney</h4>
+                                    <h5 class="full-sydneys">Park Hyatt Sydney</h5>
                                 </li>
                                 <li class="informations">
                                     <i class="fa-solid fa-location-dot me-2"></i>
@@ -122,14 +137,14 @@
                         <!-- Start nav bar -->
                         <nav>
                             <div class="navbars">
-                                <ul class="list-unstyled navbarlinks navbarlink-hides">
-                                    <li><a href="#hotel" class="text-light text-uppercase nav-link">hotel</a></li>
-                                    <li><a href="#roomsuits" class="text-light text-uppercase nav-link">room + suits</a></li>
-                                    <li><a href="#areaattractions" class="text-light text-uppercase nav-link">area attractions</a></li>
-                                    <li><a href="#dining" class="text-light text-uppercase nav-link">dining</a></li>
-                                    <li><a href="#specialevents" class="text-light text-uppercase nav-link">special events</a></li>
-                                    <li><a href="#photoreviews" class="text-light text-uppercase nav-link">photo + reviews</a></li>
-                                    <li><a href="#offers" class="text-light text-uppercase nav-link">offers</a></li>
+                                <ul class="list-unstyled navbarlinks navbarhides">
+                                    <li><a href="#hotel" class="text-light text-uppercase nav-link">hotel</a></li><span class="text-light">|</span>
+                                    <li><a href="#roomsuits" class="text-light text-uppercase nav-link">room + suits</a></li><span class="text-light">|</span>
+                                    <li><a href="#areaattractions" class="text-light text-uppercase nav-link">area attractions</a></li><span class="text-light">|</span>
+                                    <li><a href="#dining" class="text-light text-uppercase nav-link">dining</a></li><span class="text-light">|</span>
+                                    <li><a href="#specialevents" class="text-light text-uppercase nav-link">special events</a></li><span class="text-light">|</span>
+                                    <li><a href="#photoreviews" class="text-light text-uppercase nav-link">photo + reviews</a></li><span class="text-light">|</span>
+                                    <li><a href="#offers" class="text-light text-uppercase nav-link">offers</a></li><span class="text-light">|</span>
                                 </ul>
                             </div>
                             
@@ -303,12 +318,85 @@
                         </div>
                     </div>
                 </div>
-                <div class="text-center amenities-btns">
-                    <button type="button" class="text-uppercase">all amenities
-                        <i class="fa-solid fa-angle-down mx-1"></i>
-                    </button>
-                </div>
             </div>
+        </div>
+
+        <!-- Start Detail Amenities Part -->
+        <div class="container detail-amenities">
+            <div class="row">
+                <div class="col-md-4 mt-4">
+                    <div class="row">
+                        <!-- Start Hotel Features  -->
+                        <div class="col-md-1 my-4">
+                            <i class="fa-solid fa-hotel"></i>
+                        </div>
+
+                        <div class="col-md-10">
+                            <ul class="list-unstyled my-4">
+                                <li class="my-2 fw-bold d-inline">Hotel Features</li>
+                                <li class="my-2">Coveted harbourfront location</li>
+                                <li class="my-2">155 spacious rooms and specialty suites, including three rooftop suites with private terraces and panoramic views of Sydney Harbour</li>
+                                <li class="my-2">Floor-to-ceiling glass doors and spacious private balconies offer unrivaled harbour views</li>
+                                <li class="my-2">Private wharf accessible by water taxi</li>
+                                <li class="my-2">Business Services</li>
+                                <li class="my-2">The Spa, featuring five private treatment rooms, a relaxation room, steam room, outdoor whirlpool and gymnasium</li>
+                                <li class="my-2">Outdoor rooftop pool and terrace exclusively for residing guests</li>
+                                <li class="my-2">Five elegant meeting rooms with modern technology and specially commissioned artwork</li>
+                                <li class="my-2">Exclusively commissioned artworks by renowned Australian artists</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Hotel Features  -->
+                <!-- Start Amenities  -->
+                <div class="col-md-4 mt-4">
+                    <div class="row">
+                        <div class="col-md-1 my-4">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <div class="col-md-10">
+                            <ul class="list-unstyled my-4">
+                                <li class="my-2 fw-bold d-inline">Amenities</li>
+                                <li class="my-2">Wi-Fi</li>
+                                <li class="my-2">Morning newspaper</li>
+                                <li class="my-2">In-room Nespresso coffee maker</li>
+                                <li class="my-2">In-room Bose digital music system</li>
+                                <li class="my-2">Dedicated 24-hour personal butler service</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Amenities -->
+                <!-- Start Business Service  -->
+                <div class="col-md-4 mt-4">
+                    <div class="row">
+                        <div class="col-md-1 my-4">
+                            <i class="fa-solid fa-print"></i>
+                        </div>
+
+                        <div class="col-md-10">
+                            <ul class="list-unstyled my-4">
+                                <li class="my-2 fw-bold d-inline">Business Services</li>
+                                <li class="my-2">Work stations</li>
+                                <li class="my-2">Photocopying</li>
+                                <li class="my-2">Printing</li>
+                                <li class="my-2">Fax services</li>
+                                <li class="my-2">Local business reference library</li>
+                                <li class="my-2">Complimentary Wi-Fi</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- End Business Service  -->
+            </div>
+        </div>
+        <!-- End Detail Amenities Part  -->
+
+        <div class="text-center amenities-btns">
+            <button type="button" class="text-uppercase">all amenities
+                <i class="fa-solid fa-angle-down mx-1 amenitie-arrows"></i>
+            </button>
         </div>
     </section>
     <!-- End Amenities Section  -->
@@ -767,34 +855,112 @@
     <!-- End News Section  -->
 
     <!-- Start Footer Section  -->
-    <footer class="">
+    <footer>
         <div class="footer-parts">
             <div class="row me-0">
-                <div class="col-md-7 mx-auto">
+                <div class="col-md-7 border-lines">
                     <div class="row">
-                        <div class="col-md-4">
-                            <h5>Reservations</h5>
-                            <ul>
-                                <li><a href="#">Modify/Cancel</a></li>
-                                <li><a href="#">Retrieve Hotel Bill</a></li>
-                            </ul>
-                        </div>
+                        <div class="col-md-8 mx-auto">
+                            <div class="row my-5">
+                                <div class="col-md-5 ms-4">
+                                    <h5 class="text-light text-uppercase fw-bold my-3">reservations</h5>
+                                    <ul class="list-unstyled footerlinks">
+                                        <li><a href="#modify" class="text-secondary nav-link">Modify/Cancel</a></li>
+                                        <li><a href="#retrievehotelbill" class="text-secondary nav-link">Retrieve Hotel Bill</a></li>
+                                    </ul>
+                                </div>
 
-                        <div class="col-md-4">
-                            <h5>Reservations</h5>
-                            <ul>
-                                <li><a href="#">Modify/Cancel</a></li>
-                                <li><a href="#">Retrieve Hotel Bill</a></li>
-                            </ul>
+                                <div class="col-md-5 ms-4">
+                                    <h5 class="text-light text-uppercase fw-bold my-3">customer service</h5>
+                                    <ul class="list-unstyled footerlinks">
+                                        <li><a href="#customerservice" class="text-secondary nav-link">Customer Service</a></li>
+                                        <li><a href="#faqs" class="text-secondary nav-link">FAQs</a></li>
+                                        <li><a href="#contactus" class="text-secondary nav-link">Contact Us</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-md-5 ms-4">
+                                    <h5 class="text-light text-uppercase fw-bold my-3">corporate sites</h5>
+                                    <ul class="list-unstyled footerlinks">
+                                        <li><a href="#aboutus" class="text-secondary nav-link">About Us</a></li>
+                                        <li><a href="#careers" class="text-secondary nav-link">Careers</a></li>
+                                        <li><a href="#investor" class="text-secondary nav-link">Investor Relations
+                                            <i class="fa-solid fa-arrow-up-right-from-square ms-2"></i>
+                                        </a></li>
+                                        <li><a href="#hyattdevelop" class="text-secondary nav-link">Hyatt Development
+                                            <i class="fa-solid fa-arrow-up-right-from-square ms-2"></i>
+                                        </a></li>
+                                        <li><a href="#corporate" class="text-secondary nav-link">Corporate Responsibility</a></li>
+                                        <li><a href="#newsroom" class="text-secondary nav-link">News Room
+                                            <i class="fa-solid fa-arrow-up-right-from-square ms-2"></i>
+                                        </a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="col-md-5 ms-4">
+                                    <h5 class="text-light text-uppercase fw-bold my-3">explore more</h5>
+                                    <ul class="list-unstyled footerlinks">
+                                        <li><a href="#traveladvisor" class="text-secondary nav-link">Travel Advisor</a></li>
+                                        <li><a href="#coporatetravel" class="text-secondary nav-link">Coporate Travel</a></li>
+                                        <li><a href="#residences" class="text-secondary nav-link">Residences</a></li>
+                                        <li><a href="#giftcard" class="text-secondary nav-link">Gift Card
+                                            <i class="fa-solid fa-arrow-up-right-from-square ms-2"></i>
+                                        </a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-6">
+                <!-- Start Mobile App & Connect  -->
+                <div class="col-md-5 my-5 ps-5">
+                    <div class="d-grid guarantees">
+                        <h4 class="text-light fw-bold">THE HYATT.COM BEST RATE GUARANTEE</h4>
+                        <button type="button" class="mt-2 mb-5 learn-btns">learn more</button>
+                    </div>
 
+                    <div class="app-parts">
+                        <h4 class="text-light fw-bold">GET THE MOBILE APP</h4>
+
+                        <div class="my-4 mobile-apps">
+                            <img src="./asset/imgs/logo/playstore.png" class="mx-3" width="30px" alt="playstore">
+                            <img src="./asset/imgs/logo/appstore.png" width="30px" alt="appstore">
+                        </div>
+                    </div>
+
+                    <div class="connect-parts">
+                        <h4 class="text-light fw-bold">CONNECT WITH HYATT</h4>
+
+                        <div class="my-4 connect-hyatts">
+                            <img src="./asset/imgs/logo/facebook.png" width="30px" class="ms-3 me-2" alt="facebook">
+                            <img src="./asset/imgs/logo/instagram.png" width="30px" class="me-2" alt="instagram">
+                            <img src="./asset/imgs/logo/twitter.png" width="30px" class="me-2" alt="twitter">
+                            <img src="./asset/imgs/logo/linkedin.png" width="30px" class="me-2" alt="linkedin">
+                            <img src="./asset/imgs/logo/youtube.png" width="30px" class="me-2" alt="youtube">
+                        </div>
+
+                    </div>
                 </div>
+                <!-- End Mobile App & Connect -->
             </div>
         </div>
+
+        <!-- Start Copy Right Section  -->
+        <section class="copyrights">
+            <div class="col-md-12">
+                <ul class="list-unstyled d-flex justify-content-center py-3 mb-0 copyright-links">
+                    <li><a href="#">Privacy Policy</a></li><span class="mx-2">|</span>
+                    <li><a href="#">Terms & Conditions</a></li><span class="mx-2">|</span>
+                    <li><a href="#">Cookie Center</a></li><span class="mx-2">|</span>
+                    <li><a href="#">Security & Safety</a></li><span class="mx-2">|</span>
+                    <li><a href="#">Modern Slavery And Human Trafficking</a></li><span class="mx-2">|</span>
+                    <li><a href="#">Do Not Sell My Personal Informations</a></li><span class="mx-2">|</span>
+                    <li class="hyatt-coporations">&copy; <span id="year"></span> Hyatt Coporation</li>
+                </ul>
+            </div>
+        </section>
+        <!-- End Copy Right Section  -->
     </footer>
     <!-- End Footer Section  -->
 

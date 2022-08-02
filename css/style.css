@@ -46,15 +46,23 @@ body {
     margin: 6px;
 }
 
-.headings h3 {
-    font-family: 'Ibarra Real Nova', serif;
+.brand-parts h6 {
     letter-spacing: 2px;
     font-weight: bold;
 }
 
-.countrys,.logins {
-    cursor: pointer;
-    display: inline-block;
+.dropdown,.logins {
+    display: inline;
+
+    font-size: 14px;
+}
+
+.languages {
+    text-decoration: none;
+}
+
+.show {
+    font-size: 14px;
 }
 
 .rotate-arrows {
@@ -83,6 +91,8 @@ body {
 
 .btn {
     width: 250px;
+
+    font-size: 14px;
     
     display: block;
     
@@ -94,8 +104,10 @@ body {
 }
 
 .detail-parts{
-    height: 60vh;
+    height: auto;
     background-color: #d1d7e0;
+
+    font-size: 14px;
     
     padding: 40px 30px;
 }
@@ -107,7 +119,7 @@ body {
 .detail-parts ul li {
     cursor: pointer;
     
-    line-height: 2.5;
+    line-height: 2;
 }
 
 .detail-parts ul li:hover {
@@ -115,7 +127,7 @@ body {
 }
 
 @media (max-width: 768px) {
-    .headings h3 {
+    .headings h6 {
         display: inline-block;
         transform: translate(0px, -10px);
     }
@@ -142,18 +154,22 @@ body {
     
     font-family: 'Ibarra Real Nova', serif;
     
-    background-color: #000;
+    background-color: #222;
 }
 
 .sydneys {
     display: none;
 }
 
-.hotelAddress li a {
+.informations {
+    font-size: 14px;
+}
+
+.informations a {
     text-decoration: none;
 }
 
-.hotelAddress li a:hover {
+.informations a:hover {
     text-decoration: underline;
 }
 
@@ -161,6 +177,8 @@ body {
     background-color: yellow;
     
     padding: 5px 30px;
+
+    border: none;
 }
 
 /* Start Hotel Address Animation  */
@@ -238,6 +256,14 @@ body {
     display: flex;
 }
 
+.navbarlinks .nav-link {
+    font-size: 14px;
+
+    display: block;
+
+    padding: 0 10px !important;
+}
+
 .navbars .navbarlinks .nav-link:hover {
     text-decoration: underline;
 }
@@ -298,14 +324,24 @@ body {
         
         display: inline-block;
     }
-    
+
+    .navbar-slides .navbarlinks li {
+        padding: 10px;
+
+        margin-bottom: 0px;
+    }
+
     .navbar-slides .navbarlinks .nav-link {
         color: #000 !important;
+
+        text-decoration: none;
+
+        display: block;
         
         border-bottom: 1px solid silver;
     }
     
-    .navbar-slides .navbarlinks .nav-link:hover {
+    .navbar-slides .navbarlinks li .nav-link:hover  {
         background-color: rgba(0, 0, 0, 0.1);
     }
 }
@@ -543,7 +579,7 @@ body {
 .roomsuites-btns button {
     padding: 10px 20px;
     
-    border-color: darkred;
+    border: 1px solid darkred;
     
     background-color: transparent;
     
@@ -660,7 +696,7 @@ body {
 .phone-emails button {
     background-color: transparent;
     
-    border-color: darkred;
+    border: 1px solid darkred;
     
     padding: 5px 20px;
     
@@ -815,7 +851,7 @@ body {
 
     background-color: transparent;
 
-    border-color: darkred;
+    border: 1px solid darkred;
 }
 
 .review-texts button:hover {
@@ -839,7 +875,7 @@ body {
     
     padding: 10px 20px;
 
-    border-color: darkred;
+    border: 1px solid darkred;
 
     color: grey;
 }
@@ -878,7 +914,7 @@ body {
 .event-btns {
     background-color: transparent;
 
-    border-color: #fff;
+    border: 1px solid #fff;
 
     width: 200px;
     height: 50px;
@@ -951,8 +987,74 @@ body {
 
 /* Start Footer Section  */
 .footer-parts {
-    background-color: #111;
+    background-color: #222;
 
     box-shadow: 0 -5px 0 grey;
+}
+
+.footer-parts h5 {
+    font-size: 16px;
+}
+
+.border-lines {
+    border-right: 1px solid #fff;
+}
+
+.footerlinks li a {
+    padding: 0;
+    margin: 0;
+
+    font-size: 15px;
+    line-height: 2.5;
+
+    display: inline-block;
+}
+
+.footerlinks li a:hover {
+    text-decoration: underline;
+
+    color: #fff !important;
+}
+
+.learn-btns {
+    color: #fff;
+
+    border: 1px solid #fff;
+
+    padding: 5px 50px;
+
+    background-color: transparent;
+}
+
+.learn-btns:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.guarantees {
+    width: 300px;
+}
+
+.copyrights {
+    background-color: #000;
+}
+
+.copyright-links li a,.hyatt-coporations {
+    font-size: 13px;
+
+    color: grey;
+}
+
+.copyright-links li a {
+    text-decoration: none;
+}
+
+.copyright-links li a:hover {
+    text-decoration: underline;
+
+    color: #fff;
+}
+
+.copyright-links span {
+    display: inline-block;
 }
 /* End Footer Section  */
