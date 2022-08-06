@@ -1,7 +1,13 @@
-$(document).ready(function () {
-    
+$(document).ready(function () {   
     // Start Header Section  
     // Start intro
+    $(".humbagers").click(function (e) { 
+        
+        $(".navbar-slides").show("slide", {direction: "left"}, 300);
+        e.preventDefault();
+        
+    });
+
     $(".languages").click(function (e) { 
 
         $(".global-arrows").toggleClass("rotate-arrows");
@@ -13,13 +19,6 @@ $(document).ready(function () {
         $(".login-arrows").toggleClass("rotate-arrows");
         $(".login-forms").toggle();
         e.preventDefault();            
-    });
-    
-    $(".humbagers").click(function (e) { 
-        
-        $(".navbar-slides").show("slide", {direction: "left"}, 300);
-        e.preventDefault();
-        
     });
     // End Intro
     
@@ -118,6 +117,45 @@ $(document).ready(function () {
         }
     });
     // End Map,Parking+Transportation Section
+
+    // Start Our Hotel Section 
+    // Start Rooftop
+    $(".rooftops").click(function (e) { 
+        e.preventDefault();
+        
+        $(".hotel-arrows").toggleClass("rotate-arrows");
+        $(".text-rooftops").toggle();
+    });
+    // End Rooftop
+
+    // Start Guesthouse
+    $(".guesthouses").click(function (e) { 
+        e.preventDefault();
+
+        $(".hotel-arrows").toggleClass("rotate-arrows");
+        $(".text-guesthouses").toggle();
+        
+    });
+    // End Guesthouse
+
+    // Start Fitness 
+    $(".fitness").click(function (e) { 
+        e.preventDefault();
+        
+        $(".hotel-arrows").toggleClass("rotate-arrows");
+        $(".text-fitness").toggle();
+    });
+    // End Fitness
+
+    // Start Art
+    $(".art").click(function (e) { 
+        e.preventDefault();
+        
+        $(".hotel-arrows").toggleClass("rotate-arrows");
+        $(".text-art").toggle();
+    });
+    // End Art 
+    // End Our Hotel Section
 
     // Start Copyright Section 
     let today = new Date();

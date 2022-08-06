@@ -7,9 +7,6 @@
 }
 
 body {
-    /* font-family: 'Ibarra Real Nova', serif;
-    font-family: 'Mukta', sans-serif; */
-    
     position: relative;
 }
 
@@ -69,6 +66,10 @@ body {
     transform: rotate(180deg);
 }
 
+.logins {
+    cursor: pointer;
+}
+
 .login-forms {
     width: 350px;
     
@@ -90,13 +91,13 @@ body {
 }
 
 .btn {
-    width: 250px;
+    width: 200px;
 
     font-size: 14px;
     
     display: block;
-    
-    margin: 10px 0;
+
+    margin-bottom: 10px;
 }
 
 .btn-outline-primary:hover{
@@ -126,6 +127,17 @@ body {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
+@media (max-width: 992px) {
+    .login-forms {
+        width: 300px;
+        transform: translateX(-15%);
+        
+        position: absolute;
+        right: 0px;
+        top: 60px;
+    }
+}
+
 @media (max-width: 768px) {
     .headings h6 {
         display: inline-block;
@@ -142,7 +154,17 @@ body {
         background-color: transparent;
         
         border: none;
-    }  
+    }
+    
+    .login-forms {
+        width: 300px;
+
+        transform: translateX(-35%);
+        
+        position: absolute;
+        right: 0;
+        top: 60px;
+    }
 }
 
 /* End intro  */
@@ -173,6 +195,10 @@ body {
     text-decoration: underline;
 }
 
+.informations span {
+    display: none;
+}
+
 .bookingBtns {
     background-color: yellow;
     
@@ -193,59 +219,54 @@ body {
         transform: translateX(0px);
     }
     to {
-        transform: translateX(-200px);
+        transform: translateX(-150px);
     }
 }
 /* End Hotel Address Animation  */
 
-@media (max-width: 768px) {
-    .park-hyatts {
-        width: 200px;
-        height: 150px;
-        
-        margin: auto;
-        
-        display: none;
+@media (max-width: 992px) {
+    .park-hyatts img {
+        width: 100px;
     }
-    
-    .sydneys {
-        display: block;
-        
-        text-align: center;
-        
-        margin-bottom: 30px;
-    }
-    
-    .hotelAddress .full-sydneys,.contacts{
-        display: none;
-    }
-    
-    .hotelAddress {
-        display: flex;
-        justify-content: center;
-    }
-    
-    .hotelAddress li {
-        margin: 0 20px;
-    }
-    
-    .hotelAddress li i {
+
+    .full-sydneys {
         font-size: 20px;
     }
-    
+
     .bookingBtns {
-        width: 100%;
-        background-color: yellow;
-        
-        padding: 5px 30px;
+        font-size: 14px;
     }
-    
-    .navbarlinks .nav-link:hover {
-        text-decoration: underline;
+
+    @keyframes moveleft {
+        from {
+            transform: translateX(0px);
+        }
+        to {
+            transform: translateX(-100px);
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .park-hyatts img  {
+        height: 100px;
+        display: n;
+    }
+    .hotelAddress {
+        margin-left: 30px;
+    }
+
+    .contacts {
+        display: none;
+    }
+
+    .informations,.informations span {
+        display: inline-block;
+
+        padding-right: 10px;
     }
     
 }
-/* End Hotel Address   */
 
 /* Start Nav Bar  */
 .navbars {
@@ -258,9 +279,7 @@ body {
 
 .navbarlinks .nav-link {
     font-size: 14px;
-
     display: block;
-
     padding: 0 10px !important;
 }
 
@@ -270,6 +289,17 @@ body {
 
 .navbar-slides {
     display: none;
+}
+
+@media (max-width: 992px) {
+    .navbars .navbarlinks li a {
+        font-size: 12px !important;
+    }
+
+    .navbars .navbarlinks {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
 
 @media (max-width: 768px) {
@@ -327,12 +357,11 @@ body {
 
     .navbar-slides .navbarlinks li {
         padding: 10px;
-
-        margin-bottom: 0px;
     }
 
     .navbar-slides .navbarlinks .nav-link {
         color: #000 !important;
+        font-size: 16px !important;
 
         text-decoration: none;
 
@@ -341,7 +370,7 @@ body {
         border-bottom: 1px solid silver;
     }
     
-    .navbar-slides .navbarlinks li .nav-link:hover  {
+    .navbar-slides .navbarlinks li .nav-link:hover {
         background-color: rgba(0, 0, 0, 0.1);
     }
 }
@@ -351,13 +380,9 @@ body {
 .banner-buttons button {
     padding: 10px 20px;
     margin: 20px 100px 40px 0;
-    
-    border-color: darkred;
-    
+    border: 1px solid darkred;
     background-color: transparent;
-    
     color: grey;
-    
     float: right;
 }
 
@@ -395,9 +420,13 @@ body {
     top: 0;
 }
 
+@media (max-width: 992px) {
+
+}
+
 @media (max-width: 768px) {
     .banners {
-        margin-top: 200px;
+        margin-top: 100px;
     }
 }
 /* End Banner  */
@@ -533,6 +562,7 @@ body {
 .safetys {
     background-size: cover;
     background-image: url("./../asset/imgs/bodyimg/park-Hyatt-Sanya-Sunny-Bay-Resort.jpg");
+    background-repeat: no-repeat;
     
     display: flex;
     justify-content: end;
@@ -560,6 +590,30 @@ body {
 
 .safety-texts .nav-link:hover {
     text-decoration: underline;
+}
+
+@media (max-width: 992px) {
+    .safetys {
+        background-size: 100% 250px;
+    }
+
+    .safety-texts {
+        padding: 0 !important;
+    }
+
+    .safety-texts h2 {
+        font-size: 20px;
+
+        margin-top: 10px !important;
+    }
+
+    .safety-texts p,.safety-texts a {
+        font-size: 14px;
+    }
+
+    .safety-texts span {
+        margin: 0 !important;
+    }
 }
 /* End Safety First Section  */
 
@@ -660,6 +714,84 @@ body {
 .dinning-rooms:hover p,.spas:hover p {
     display: block;
 }
+
+@media (max-width: 992px) {
+    .card-body h5 {
+        font-size: 18px !important;
+    }
+
+    .card-body p {
+        font-size: 14px !important;
+    }
+
+    .dinning-rooms img,.spas img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .dinning-rooms::before,.spas::before {
+        height: 30%;
+    }
+
+    .dinning-texts h6,.spa-texts h6 {
+        font-size: 18px !important;
+
+        margin: 20px;
+    }
+
+    .dinning-texts h5,.spa-texts h5 {
+        font-size: 16px;
+    }
+
+    .about-menus p,.about-spas p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card-body {
+        display: flex;
+    }
+
+    .card-images {
+        width: 200px !important;
+        height: 150px;
+
+        margin-top: 1.5rem;
+    }
+
+    .card-body h5 {
+        margin-left: 30px;
+        margin-top: 0 !important;
+    }
+
+    .card-body p {
+        margin-left: 30px;
+    }
+
+    .dinning-rooms img,.spas img {
+        width: 100%;
+        height: 225px;
+    }
+
+    .dinning-rooms::before,.spas::before {
+        width: 70%;
+        height: 60%;
+    }
+
+    .dinning-rooms:hover::before,.spas:hover::before{
+        width: 70%;
+        height: 60%;
+    }
+
+    .dinning-rooms:hover p {
+        display: none;
+    }
+
+    .spas:hover p {
+        display: none;
+    }
+}
 /* End Room & Suites Section  */
 
 /* Start Map,Parking+Transportation Section */
@@ -709,6 +841,42 @@ body {
     
     color: #fff;
 }
+
+@media (max-width: 992px) {
+    .map-sections iframe {
+        height: 300px;
+        margin-top: 60px;
+    }
+
+    .info-parts h3 {
+        font-size: 20px;
+    }
+
+    .addresss small,.phone-emails small {
+        margin: 10px 0 !important;
+    }
+
+    .addresss a address,.phone-emails a {
+        font-size: 14px !important;
+    }
+
+    .phone-emails button {
+        width: 150px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .map-sections iframe {
+        width: 200px;
+        margin-top: 30px;
+    }
+
+    .info-parts {
+        margin-top: 20px !important;
+        margin-left: -50px !important;
+    }
+}
 /* End Map,Parking+Transportation Section */
 
 /* Start Room & Suites Section  */
@@ -729,11 +897,11 @@ body {
     width: 100%;
 }
 
-.room-contrusts {
+.room-constructions {
     margin: 30px;
 }
 
-.room-contrusts p {
+.room-constructions p {
     width: 80%;
 }
 
@@ -747,12 +915,50 @@ body {
     position: relative;
 }
 
+.opera-suittwos img {
+    width: 100%;
+
+    clip-path: polygon(20% 0, 80% 0, 80% 100%, 20% 100%);
+
+    margin-top: -25px !important;
+}
+
 .bath-rooms img {
     width: 100%;
 
     position: absolute;
     left: -90px;
     top: -100px;
+}
+
+@media (max-width: 992px) {
+
+    .opera-suittwos img {
+        height: 400px;
+
+        position: relative;
+        left: 50px;
+        top: -50px;
+    }
+
+    .bath-rooms img {
+        width: 100%;
+    
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .opera-suits img,.opera-suittwos img,.bath-rooms img {
+        display: none;
+    }
+
+    .room-constructions {
+        margin-top: -50px !important;
+        margin-left: -20px !important;
+    }
 }
 /* End Room & Suites Section  */
 
@@ -816,6 +1022,79 @@ body {
 .guesthouse-texts,.gellary-texts {
     padding: 30px 30px 0 0;
 }
+
+.accordions {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .hotel-parts {
+        margin-top: -100px;
+    }
+
+    .swimmingpool-texts,.guesthouse-texts,.fitness-texts,.gellary-texts {
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .swimmingpool-texts h3,.guesthouse-texts h3,.fitness-texts h3,.gellary-texts h3 {
+        font-size: 20px;
+
+        margin-bottom: 20px !important;
+    }
+
+    .swimmingpool-texts p,.guesthouse-texts p,.fitness-texts p,.gellary-texts p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .our-hotels {
+        display: none;
+    }
+
+    .accordions {
+        display: block;
+    }
+
+    .rooftops,.guesthouses,.fitness,.art {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .rooftops h3,.guesthouses h3,.fitness h3,.art h3 {
+        font-size: 20px;
+        letter-spacing: 2px;
+
+        display: inline-block;
+
+        cursor: pointer;
+    }
+
+    .rooftops i,.guesthouses i,.fitness i,.art h3 {
+        cursor: pointer;
+    }
+
+    .underlines {
+        border-bottom: 1px solid #000;
+    }
+
+    .text-rooftops img,.text-guesthouses img,.text-fitness img,.text-art img {
+        width: 100%;
+
+        margin-top: 30px;
+    }
+
+    .text-rooftops p,.text-guesthouses p,.text-fitness p,.text-art p {
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+
+    .text-rooftops,.text-guesthouses,.text-fitness,.text-art {
+        display: none;
+    }
+}
 /* End Our Hotel Section  */
 
 /* Start Photo & Review Section  */
@@ -826,10 +1105,13 @@ body {
 .photo-parts {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .photo-parts img {
     width: 240px;
+    margin-left: 10px;
+    margin-bottom: 5px;
 }
 
 .review-parts h3 {
@@ -858,6 +1140,14 @@ body {
     color: #fff;
 
     background-color: darkred;
+}
+
+@media (max-width: 992px) {
+    .photo-parts img {
+        width: 150px;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
 }
 /* End Photo & Review Section  */
 
@@ -891,11 +1181,38 @@ body {
 }
 
 .dining-texts img {
+    width: 100%;
+
     position: absolute;
-    right: -110px;
-    bottom: calc(-140%);
+    right: -50px;
+    bottom: -250px;
 
     z-index: -1;
+}
+
+@media (max-width: 992px) {
+    .dining-texts {
+        margin-top: 0px !important;
+    }
+
+    .dining-texts img {
+        width: 300px;
+        right: -65px;
+        bottom: -175px;
+    }
+}
+
+@media (max-width: 768px) {
+    .dining-texts {
+        margin-top: 30px !important;
+        margin-left: -5px !important;
+    }
+
+    .dining-texts img {
+        width: 400px;
+        right: 0px;
+        bottom: -200px;
+    }
 }
 /* End Dining Section  */
 
@@ -944,6 +1261,16 @@ body {
 
 .fa-twitter:hover {
     color: skyblue;
+}
+
+@media (max-width: 768px) {
+    .events {
+        height: 35vh;
+    }
+
+    .event-texts p {
+        padding-top: 20px;
+    }
 }
 /* End Events Section  */
 
@@ -1034,8 +1361,21 @@ body {
     width: 300px;
 }
 
+.mobile-apps,.connect-hyatts {
+    text-decoration: none;
+}
+
 .copyrights {
     background-color: #000;
+}
+
+.copyright-links {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.copyright-links li {
+    padding-bottom: 5px;
 }
 
 .copyright-links li a,.hyatt-coporations {
@@ -1056,5 +1396,25 @@ body {
 
 .copyright-links span {
     display: inline-block;
+}
+
+@media (max-width: 992px) {
+    .footerlinks li a {
+        font-size: 13px !important;
+    }
+
+    .copyright-links li a {
+        font-size: 12px;
+        text-align: center;
+        display: inline-block;
+    }
+
+    .hyatt-coporations {
+        font-size: 12px;
+    }
+
+    .guarantees {
+        width: 200px;
+    }
 }
 /* End Footer Section  */
