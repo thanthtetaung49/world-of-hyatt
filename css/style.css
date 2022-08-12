@@ -10,8 +10,47 @@ body {
     position: relative;
 }
 
+/* Start Facebook Button  */
+
+/* End Facebook Button  */
+.facebookbtns {
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 20px !important;
+    text-decoration: none;
+    color: #fff;
+
+    background-color: silver;
+    padding: 10px 25px;
+
+    transform: rotate(-90deg);
+
+    position: fixed;
+    right: -53px;
+    bottom: 100px;
+
+    z-index: 2;
+}
+
+@media (max-width: 768px) {
+    .facebookbtns {
+        display: none;
+    }
+}
 /* Start Header Section  */
 /* Start intro  */
+#progresss {
+    display: block;
+
+    width: 0%;
+
+    border-top: 3px solid darkred;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
 .headerIntros {
     font-family: 'Mukta', sans-serif;
     
@@ -165,6 +204,38 @@ body {
         right: 0;
         top: 60px;
     }
+
+    .brand-parts,.language-logins {
+        position: static;
+    }
+}
+
+@media (max-width: 576px) {
+    .brand-parts,.language-logins {
+        position: absolute !important;
+    }
+
+    .brand-parts {
+        left: 0;
+    }
+
+    .language-logins {
+        right: 0;
+    }
+
+    .login-forms {
+        position: absolute;
+        left: -110px;
+        top: 40px;
+    }
+
+    .detail-parts ul li {
+        line-height: 1.7;
+    }
+
+    .login-arrows {
+        padding-right: 5px;
+    }
 }
 
 /* End intro  */
@@ -265,7 +336,25 @@ body {
 
         padding-right: 10px;
     }
-    
+}
+
+@media (max-width: 576px) {
+    .hotelAddress {
+        margin-left: 50px !important;
+    }
+
+    button.bookingBtns {
+        margin-left: 1.5rem;
+    }
+
+    @keyframes moveleft {
+        from {
+            transform: translateX(0px);
+        }
+        to {
+            transform: translateX(-85px);
+        }
+    }
 }
 
 /* Start Nav Bar  */
@@ -429,6 +518,21 @@ body {
         margin-top: 100px;
     }
 }
+
+@media (max-width: 576px) {
+    .banners {
+        margin-top: 200px;
+    }
+
+    .banner-buttons {
+        margin-right: 0;
+    }
+
+    .banner-paragraphs {
+        font-size: 13px;
+        margin-bottom: 3rem;
+    }
+}
 /* End Banner  */
 /* End Header Section  */
 
@@ -490,7 +594,7 @@ body {
 
 @keyframes left-animations {
     from {
-        transform: translateX(-30px);
+        transform: translateX(-10px);
         opacity: 0;
     }
     to {
@@ -501,7 +605,7 @@ body {
 
 @keyframes right-animations {
     from {
-        transform: translateX(30px);
+        transform: translateX(10px);
         opacity: 0;
     }
     to {
@@ -510,6 +614,25 @@ body {
     }
 }
 /* End Commitent Care Section Animation  */
+
+@media (max-width: 576px) {
+    .care-texts {
+        margin-left: 0;
+
+        text-align: center;
+    }
+
+    .global-logos {
+        margin: 1rem 0 !important;
+
+        display: grid;
+        place-items: center;
+    }
+
+    .global-logos img {
+        width: 150px;
+    }
+}
 /* End Commitent Care Section  */
 
 /* Start Amenities Section  */
@@ -555,6 +678,12 @@ body {
         opacity: 1;
     }
 }
+
+@media (max-width: 576px) {
+    .detail-amenities {
+        padding-left: 20px;
+    }
+}
 /* End Amenities Section Animation  */
 /* End Amenities Section  */
 
@@ -594,7 +723,7 @@ body {
 
 @media (max-width: 992px) {
     .safetys {
-        background-size: 100% 250px;
+        background-size: 100% 100%;
     }
 
     .safety-texts {
@@ -792,6 +921,33 @@ body {
         display: none;
     }
 }
+
+@media (max-width: 576px) {
+    .card-body {
+        display: block;
+    }
+
+    .card-images {
+        width: 100% !important;
+        height: auto;
+    }
+
+    .card-body div h5,.card-body div p {
+        text-align: center;
+
+        margin-left: 0;
+    }
+
+    .dinning-texts {
+        transform: translateX(-65%);
+        margin-left: 20px;
+    }
+
+    .dining-texts img {
+        width: 350px;
+        right: 20px;
+    }
+}
 /* End Room & Suites Section  */
 
 /* Start Map,Parking+Transportation Section */
@@ -877,6 +1033,34 @@ body {
         margin-left: -50px !important;
     }
 }
+
+@media (max-width: 576px) {
+    .map-sections iframe {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .info-parts {
+        margin-left: 20px !important;
+        padding-left: 0 !important;
+
+        animation-name: map-animation;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+    }
+
+    .addresss small,.phone-emails small {
+        margin: 0 !important;
+    }
+
+    .phone-emails button {
+        margin: 5px 0 !important;
+    }
+
+    .phone-emails a {
+        padding-bottom: 10px;
+    }
+}
 /* End Map,Parking+Transportation Section */
 
 /* Start Room & Suites Section  */
@@ -958,6 +1142,17 @@ body {
     .room-constructions {
         margin-top: -50px !important;
         margin-left: -20px !important;
+    }
+}
+
+@media (max-width: 576px) {
+    .roomsuites-parts img {
+        height: 300px;
+    }
+
+    .room-constructions {
+        margin-top: 5px !important;
+        margin-left: 20px !important;
     }
 }
 /* End Room & Suites Section  */
@@ -1072,12 +1267,9 @@ body {
         cursor: pointer;
     }
 
-    .rooftops i,.guesthouses i,.fitness i,.art h3 {
-        cursor: pointer;
-    }
-
     .underlines {
         border-bottom: 1px solid #000;
+        cursor: pointer;
     }
 
     .text-rooftops img,.text-guesthouses img,.text-fitness img,.text-art img {
@@ -1093,6 +1285,16 @@ body {
 
     .text-rooftops,.text-guesthouses,.text-fitness,.text-art {
         display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .accordions h3 {
+        margin-left: 20px;
+    }
+
+    .accordions p {
+        width: 90%;
     }
 }
 /* End Our Hotel Section  */
@@ -1147,6 +1349,24 @@ body {
         width: 150px;
         margin-left: 10px;
         margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .review-parts,.review-texts p,.review-texts button {
+        margin-left: 20px;
+    }
+
+    .photo-parts {
+        display: block;
+    }
+
+    .photo-parts img {
+        width: 100%;
+        height: auto;
+
+        padding: 0 10px;
+        margin-left: 0;
     }
 }
 /* End Photo & Review Section  */
@@ -1212,6 +1432,16 @@ body {
         width: 400px;
         right: 0px;
         bottom: -200px;
+    }
+}
+
+@media (max-width: 576px) {
+    .dining-texts {
+        margin-left: 10px !important;
+    }
+
+    .dining-texts img {
+        width: 350px;
     }
 }
 /* End Dining Section  */
@@ -1418,3 +1648,47 @@ body {
     }
 }
 /* End Footer Section  */
+
+/* Start Modal Section  */
+.modal-body {
+    border-radius: 50px;
+    background-color: #f4f4f4;
+}
+
+#bookingheadings {
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+
+    clear: both;
+}
+
+.bookingsections {
+    display: flex;
+}
+
+form {
+    display: flex;
+
+    margin-top: 1rem;
+}
+
+.form-group input {
+    width: 225px;
+}
+
+.applybtns {
+    display: flex;
+    justify-content: end;
+}
+
+.applybtns button {
+    width: 100px;
+}
+
+@media (max-width: 576px) {
+    .form-group input {
+        width: 148px;
+    }
+}
+
+/* End Modal Section  */

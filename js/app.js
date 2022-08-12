@@ -1,6 +1,23 @@
 $(document).ready(function () {   
     // Start Header Section  
     // Start intro
+
+    $(window).scroll(function() {
+
+        var getscrolltop = $(this).scrollTop();
+        var getscrollheight = $(document).height();
+        var getclientheight = $(window).height();
+        
+        var calcheight = getscrollheight - getclientheight;
+        
+        var final = Math.round((getscrolltop / calcheight) * 100);
+    
+        $("#progresss").css({
+            width: `${final}%`
+        });
+    });
+
+
     $(".humbagers").click(function (e) { 
         
         $(".navbar-slides").show("slide", {direction: "left"}, 300);
@@ -25,7 +42,6 @@ $(document).ready(function () {
     // Start hotel address
     $(window).scroll(function() {
         let getscrolltop = $(this).scrollTop();
-        console.log(getscrolltop);
         
         if(getscrolltop >= 330) {
             
@@ -164,4 +180,41 @@ $(document).ready(function () {
     
     $("#year").text(getyear);
     // End Copyright Section
+
+    // Start Modal Section 
+    $("#checkin").datepicker({
+
+        showAni: "fade",
+        duration: 1000,
+
+        dayNamesMin: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+
+        changeMonth: true,
+        changeYear: true,
+
+        dateFormat: "dd/MM/yy",
+
+        onClose: function(selectdate) {
+            $("#checkout").datepicker("option", "minDate", selectdate);
+        }
+    });
+
+    $("#checkout").datepicker({
+
+        showAni: "fade",
+        duration: 1000,
+
+        dayNamesMin: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
+
+        changeMonth: true,
+        changeYear: true,
+
+        dateFormat: "dd/MM/yy",
+
+        onClose: function(selectdate) {
+            $("#checkin").datepicker("option", "maxDate", selectdate)
+        }
+    });
+    
+    // End Modal Section 
 });
