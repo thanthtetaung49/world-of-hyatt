@@ -183,9 +183,8 @@ $(document).ready(function () {
 
     // Start Modal Section 
     $("#checkin").datepicker({
-
-        showAni: "fade",
-        duration: 1000,
+        showAnim: "fade",
+        duration: 500,
 
         dayNamesMin: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
 
@@ -200,9 +199,8 @@ $(document).ready(function () {
     });
 
     $("#checkout").datepicker({
-
-        showAni: "fade",
-        duration: 1000,
+        showAnim: "fade",
+        duration: 500,
 
         dayNamesMin: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
 
@@ -212,9 +210,33 @@ $(document).ready(function () {
         dateFormat: "dd/MM/yy",
 
         onClose: function(selectdate) {
-            $("#checkin").datepicker("option", "maxDate", selectdate)
+            $("#checkin").datepicker("option", "maxDate", selectdate);
         }
     });
-    
+
+    let roomnumber = 0;
+
+    $("#plus").click("click", function() {
+
+        roomnumber++;
+        restrictroom(roomnumber);
+    });
+
+    $("#minus").click("click", function() {
+
+        roomnumber--;
+        restrictroom(roomnumber);
+    }) 
+
+    function restrictroom (restrictroom) {
+
+        if (restrictroom < 1) {
+            restrictroom = 0;
+        }
+
+        $("#roomnumbers").text(`${restrictroom}`);
+
+        console.log(restrictroom);
+    }
     // End Modal Section 
 });

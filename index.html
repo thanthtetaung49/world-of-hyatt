@@ -1063,23 +1063,35 @@
 
                     <h3 id="bookingheadings">Booking Form</h3>
 
-                    <div class="col-12 bookingsections">
-                        
-                        <form action="" method="">
-                            <div class="form-group me-3">
-                                <label for="checkin" class="fw-bold mb-2">Check In</label>
-                                <input type="text" name="checkin" id="checkin" class="form-control form-control-sm" placeholder="Check In">
-                            </div>
-                            <div class="form-group me-3">
-                                <label for="checkout" class="fw-bold mb-2">Check Out</label>
-                                <input type="text" name="checkout" id="checkout" class="form-control form-control-sm" placeholder="Check Out">
-                            </div>
-                        </form>
+                    <form action="" method="">
+                        <div class="form-group">
+                            <input type="text" name="checkin" id="checkin" class="form-control form-control-sm" placeholder="Check In" autocomplete="off">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" name="checkin" id="checkout" class="form-control form-control-sm" placeholder="Check Out" autocomplete="off">
+                        </div>
+                    </form>
+
+                    <div class="rooms">
+                        <i id="minus" class="fa-solid fa-circle-minus ps-2"></i>
+                        <p class="text-muted">Room: <span id="roomnumbers"></span></p>
+                        <i id="plus" class="fa-solid fa-circle-plus pe-2"></i>
                     </div>
 
-                    <p id="bookinginfos" class="fw-bold"></p>
+                    <div class="dropdown">
+                        <a href="#" class="text-muted dropdown-toggle dropdownlinks" data-bs-toggle="dropdown">Room With View</a>
 
-                    <div class="my-3 applybtns">
+                        <ul class="dropdown-menu">
+                            <li><a href="#" class="dropdown-item">1 King Bed With Harbour View</a></li>
+                            <li><a href="#" class="dropdown-item">1 King Bed With Opera View</a></li>
+                            <li><a href="#" class="dropdown-item">1 King Bed With Opera View Deluxe</a></li>
+                            <li><a href="#" class="dropdown-item">Quay Suite</a></li>
+                        </ul>
+
+                    </div>
+
+                    <div class="applybtns">
                         <button type="button" class="btn btn-primary btn-sm" data-bs-dismiss="modal">Apply</button>
                     </div>
 
