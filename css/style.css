@@ -1707,12 +1707,32 @@ body {
 }
 
 .dropdown .dropdownlinks {
+    display: inline-block;
+
+    width: 95%;
     text-decoration: none;
 
     padding: 5px 45px;
     margin: 10px;
 
     border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 576px) {
+    .form-group {
+        width: 95% !important;
+    }
+
+    .rooms {
+        width: 50% !important;
+    }
+
+    .dropdown .dropdownlinks {
+        display: inline-block;
+        padding: 5px 14px;
+
+        margin: 0;
+    }
 }
 
 /* End Modal Section  */
